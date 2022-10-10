@@ -63,7 +63,7 @@ describe('temperatureRange()', function () {
         expect(updated2[0]).to.be.an("object");
     });
 
-    it("returns objects with keys of 'id', 'city', 'country', and 'monthlyTemperatureRange'",
+    it("returns objects with keys of 'city', 'country', 'annualDryDays', and 'annualSnowDays'",
         function () {
             expect(updated1[0]).to.haveOwnProperty("city");
             expect(updated1[0]).to.haveOwnProperty("country");
