@@ -44,21 +44,7 @@ returns:
 
 
 const perfectWeather = (dataSet, perfectDryDays, perfectRainfall) => {
-    let perfectWeatherArray = []
-    for (let obj of dataSet) {
-        let dryDays = obj.monthlyAvg.map(el => el.dryDays).reduce((a, b) => a + b)
-        let rainfall = Math.floor(obj.monthlyAvg.map(el => el.rainfall).reduce((a, b) => a + b))
 
-        let newObj = {}
-        newObj.city = obj.city
-        newObj.country = obj.country
-        newObj.annualDryDays = dryDays
-        newObj.annualRainFall = rainfall
-        if (dryDays >= perfectDryDays && rainfall >= perfectRainfall) {
-            perfectWeatherArray.push(newObj)
-        }
-    }
-    return perfectWeatherArray
 }
 // console.log(perfectWeather(climateData, 280, 400))
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
