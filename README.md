@@ -3,7 +3,7 @@
 Find all the cities in the climate-data.js data set that have "Perfect Weather" based on minimum
 dry days and maximum snow days.
 This is a single problem that requires returning an array of objects with specified data.
-I also made a test file to run, so use command npm install to run the mocha test.
+I also made a test file to run, so use command `npm install` to run the mocha test.
 
 ```javascript
 // climate-data.js file
