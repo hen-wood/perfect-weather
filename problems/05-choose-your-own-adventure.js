@@ -43,7 +43,7 @@ returns:
 */
 
 
-const perfectWeather = (dataSet, perfectDryDays, perfectRainfall) => {
+const perfectWeather = (dataSet, perfectDryDays, perfectRainFall) => {
 
 }
 // console.log(perfectWeather(climateData, 280, 400))
